@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Signal / Spring Session</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="intro">
+        <p class="eyebrow">Signal / Spring Session</p>
+        <h1>Make room for a better conversation.</h1>
+        <p class="lede">An afternoon of practical ideas, sharp questions, and useful connections for people building what comes next.</p>
+        <dl class="event-meta">
+          <div><dt>When</dt><dd>18 April 2026</dd></div>
+          <div><dt>Where</dt><dd>Riverside Workshop</dd></div>
+        </dl>
+      </section>
+      <section class="form-panel" aria-labelledby="form-title">
+        <p class="step">01 / RSVP</p>
+        <h2 id="form-title">Save your seat</h2>
+        <form id="registration-form">
+          <label for="name">Full name</label>
+          <input id="name" name="name" autocomplete="name" required>
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+          <fieldset>
+            <legend>How will you join?</legend>
+            <label class="choice"><input type="radio" name="attendance" value="in-person" checked> In person</label>
+            <label class="choice"><input type="radio" name="attendance" value="online"> Online stream</label>
+          </fieldset>
+          <button type="submit">Register <span aria-hidden="true">↗</span></button>
+          <p id="form-message" class="form-message" role="status"></p>
+        </form>
+      </section>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "event-registration",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A small event registration exercise for Git, Jenkins, Docker, and Kubernetes",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check public/app.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

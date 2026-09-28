@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;600;700;800&display=swap');
+
+:root { --ink: #17231f; --muted: #67736d; --paper: #f4f1e9; --lime: #c9ee74; --line: #d5d8c9; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; color: var(--ink); background: radial-gradient(circle at 85% 12%, #e1f5aa 0, transparent 27%), var(--paper); font-family: Manrope, sans-serif; }
+.page-shell { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(320px, .8fr); gap: clamp(3rem, 9vw, 10rem); max-width: 1180px; min-height: 100vh; margin: auto; padding: clamp(3rem, 9vw, 8rem) clamp(1.5rem, 5vw, 5rem); align-items: center; }
+.intro { max-width: 650px; }
+.eyebrow, .step, dt { font: 500 .75rem 'DM Mono', monospace; letter-spacing: .08em; text-transform: uppercase; }
+.eyebrow { color: #758b3e; }
+h1 { max-width: 680px; margin: 1.4rem 0; font-size: clamp(3rem, 7vw, 6.8rem); line-height: .94; letter-spacing: -.05em; }
+.lede { max-width: 470px; color: var(--muted); font-size: 1.08rem; line-height: 1.7; }
+.event-meta { display: flex; gap: 3rem; margin-top: 4rem; }
+dt { color: var(--muted); margin-bottom: .6rem; } dd { margin: 0; font-weight: 700; }
+.form-panel { padding: clamp(1.5rem, 4vw, 3.25rem); background: #fffdf8; border: 1px solid var(--line); box-shadow: 18px 18px 0 var(--lime); }
+.step { color: #758b3e; } h2 { margin: .75rem 0 2rem; font-size: 2rem; letter-spacing: -.04em; }
+form { display: grid; gap: .7rem; } label, legend { font-size: .82rem; font-weight: 700; }
+input:not([type="radio"]) { width: 100%; margin-bottom: .85rem; padding: .9rem 0; border: 0; border-bottom: 1px solid var(--line); outline: none; background: transparent; color: var(--ink); font: inherit; }
+input:focus { border-color: var(--ink); } fieldset { display: grid; gap: .7rem; margin: 1rem 0 1.25rem; padding: 0; border: 0; } .choice { font-weight: 400; }
+button { margin-top: .5rem; padding: 1rem 1.2rem; border: 0; background: var(--ink); color: #fffdf8; cursor: pointer; font: 700 1rem Manrope, sans-serif; text-align: left; } button span { float: right; font-size: 1.25rem; }
+.form-message { min-height: 1.5em; color: var(--muted); font-size: .84rem; } .success { color: #54731c; } .error { color: #9c3e32; }
+@media (max-width: 760px) { .page-shell { grid-template-columns: 1fr; min-height: auto; padding-top: 3rem; } .event-meta { margin-top: 2.5rem; } .form-panel { margin: 1rem 0 2rem; box-shadow: 10px 10px 0 var(--lime); } }
